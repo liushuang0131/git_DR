@@ -1,0 +1,1069 @@
+/*左侧导航栏*/
+.sidebar{
+    width:100px;
+    height:600px;
+    position: fixed;
+    z-index: 999;
+    top:0;
+    left:0;
+    margin-top:240px;
+    margin-left: 10px;
+}
+.sidebar ul{
+    float:left;
+}
+.sidebar ul li{
+    padding:30px 10px;
+}
+.sidebar ul li a{
+    font-weight: bold;
+    color: #000000;
+}
+.sidebar ol{
+    float:left;
+}
+.sidebar ol li{
+    width:20px;
+    height:20px;
+    background-color: #c57d5c;
+    border-radius: 50%;
+    margin:58px 0;
+}
+.sidebar ol li:nth-child(1){
+    margin-top:30px ;
+}
+.sidebar ol li:hover{
+    background-color:#848484;
+}
+
+
+
+
+/*头部*/
+header{
+    width:100%;
+    height:140px;
+}
+header .DR{
+    width:900px;
+    height:126px;
+    margin:10px auto;
+    position: relative;
+}
+header .DR .DR_L_logo{
+    background: url(../img/drlogo.png) no-repeat center/100%;
+    width:141px;
+    height:120px;
+    position: absolute;
+    transition-property: background-size;
+    transition-duration: 1s;
+}
+header .DR .DR_L_logo:hover{
+    background-size: 110%;
+}
+header .DR span{
+    position: absolute;
+    bottom:10px;
+    left:170px;
+    font-weight: bold;
+    color: #ffc0cb;
+}
+header .DR ul{
+    width:490px;
+    height: 36px;
+    position: absolute;
+    top:0;
+    right:10px;
+}
+header .DR ul li{
+    float: left;
+    /*padding:3px;*/
+    margin:3px;
+}
+header .DR ul li a{
+    font-size: 12px;
+    font-weight: bold;
+    color:#b5dae3;
+    /*margin-right: 2px;*/
+    display: block;
+
+}
+header .DR ul li a img{
+    width:6px;
+    height:11px;
+    display: inline-block;
+    margin-left: 3px;
+    vertical-align: middle;
+}
+header .DR ul li:nth-child(3) img:nth-child(1){
+    width:15px;
+    height:15px;
+    margin-right:3px;
+    vertical-align: middle;
+}
+header .DR ul li:last-child img{
+    width:9px;
+    height:5px;
+    margin-right: 3px;
+    vertical-align: middle;
+}
+/*头部右侧地址*/
+header .DR_R{
+    width:155px;
+    height:20px;
+    position: absolute;
+    top:50px;
+    right:15px;
+}
+header .DR_R p{
+    font-size: 12px;
+    font-family: "微软雅黑", sans-serif;
+    font-weight: bold;
+    text-align: center;
+    line-height: 20px;
+    color: #c67c59;
+    margin:0 6px 0 0;
+}
+header .DR_R p img{
+    display: inline-block;
+    vertical-align: middle;
+    padding:0 4px 0 0;
+}
+header .DR_R a{
+    text-align: center;
+    color: #323232;
+    font-size: 12px;
+    font-family: "微软雅黑", sans-serif;
+    font-weight: bold;
+    line-height: 20px;
+    display: block;
+}
+/*右边输入框*/
+header .DR_R_bottom{
+    position: absolute;
+    right:10px;
+    bottom:8px;
+}
+header .DR_R_bottom p{
+    font-size: 16px;
+    font-family: "微软雅黑", sans-serif;
+    font-weight: bold;
+    color: #ffc0cb;
+    margin-right: 10px;
+    text-align: center;
+    line-height: 20px;
+}
+header .DR_R_bottom form input{
+    width:229px;
+    height:20px;
+    margin-right:33px;
+    background: url(../img/ico-seach.png) no-repeat right;
+}
+/*header .DR_R_bottom form input:hover {*/
+    /*background: url(../img/zxkf.gif) no-repeat center;*/
+/*}*/
+/*DR导航条*/
+nav{
+    width:100%;
+    height:40px;
+    background: #797979;
+    position: relative;
+}
+nav ul{
+    width:900px;
+    margin:0 auto;
+}
+nav ul li{
+    float:left;
+    text-align: center;
+    line-height: 40px;
+    margin:0 33px;
+}
+nav ul li a{
+    color:#fff;
+    font-weight: bold;
+    display: block;
+}
+
+/*导航条第一个悬停*/
+nav ul li .box{
+    width: 1000px;
+    height: 260px;
+    left: 50%;
+    margin-left: -500px;
+    top: 40px;
+    display: none;
+    position: absolute;
+    z-index: 100;
+}
+nav ul li .box ol{
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    display: flex;
+}
+nav ul li .box ol li{
+    flex: 1;
+    position: relative;
+    text-align: center;
+}
+nav ul li .box ol li:nth-child(1){
+    border-right:1px dashed #000000;
+}
+nav ul li .box ol li span{
+    display: block;
+    width: 290px;
+    height:160px;
+    margin:0 auto;
+}
+nav ul li .box img{
+    width: 100%;
+    height: 100%;
+}
+nav ul li .box ol li a{
+    top:0;
+    left:0;
+    color: #dbc2a8;
+}
+nav ul li:hover .box{
+    display: block;
+}
+nav ul li:hover a{
+    color: #dbc2a8;
+}
+
+
+/*DR广告部分*/
+.banner{
+    width:100%;
+    height:660px;
+    overflow: hidden;
+}
+.banner ul{
+    width:600%;
+    height:630px;
+
+}
+.banner ul li{
+    width:17%;
+    height:660px;
+    float:left;
+    animation: banner 20s linear infinite;
+}
+.banner ul li:nth-child(1){
+    background: url(../img/banner_bg.jpg) no-repeat center top;
+    background-size:100%;
+}
+.banner ul li:nth-child(2){
+    background: url(../img/3.jpg) no-repeat center;
+    background-size:100% 100%;
+    position: relative;
+}
+.banner ul li:nth-child(2) img{
+    position: absolute;
+    width:300px;
+    height:300px;
+    top:50%;
+    left:50%;
+    margin-left:350px ;
+    margin-top:-270px;
+    border-radius: 50%;
+    opacity: .6;
+    transition: all 3s linear;
+    animation: move1 5s linear infinite;
+}
+@keyframes  move1{
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+}
+
+.banner ul li:nth-child(3){
+    background: url(../img/6.jpg) no-repeat center;
+    background-size:100% 100%;
+    position: relative;
+}
+.banner ul li:nth-child(3) img{
+    position: absolute;
+    width:280px;
+    height:230px;
+    top:50%;
+    left:0;
+    margin-left:670px ;
+    margin-top:-13px;
+    border-radius:50% 60%;
+    transition: all 2s linear;
+    animation: move2 3s linear infinite alternate;
+}
+
+@keyframes  move2{
+    0%{transform: rotate(0deg) scale(0);}
+    100%{transform: rotate(360deg) scale(1);}
+}
+.banner ul li:nth-child(3) h1{
+    position: absolute;
+    top:50%;
+    left:50%;
+    margin-left:-420px; ;
+    margin-top:-120px ;
+    color: #726464;
+    font-size:50px;
+    text-shadow: 0 0 20px #726464,
+    10px -10px 30px #c7b79d,
+    -20px -20px 40px #9a9c0f,
+    20px -40px 50px #88360b,
+    -20px -60px 60px #cd9906;
+}
+.banner ul li:nth-child(4){
+    background: url(../img/7.jpg) no-repeat center;
+    background-size:100% 100%;
+    position: relative;
+}
+.banner ul li:nth-child(4) .love1{
+    position: absolute;
+    width:300px;
+    height:300px;
+    top:50%;
+    left:50%;
+    margin-left:-747px ;
+    margin-top:-170px;
+    border-radius: 50%;
+    opacity: 0.4;
+    animation: move1 10s linear infinite;
+}
+.banner ul li:nth-child(4) .love2{
+    position: absolute;
+    width:300px;
+    height:300px;
+    top:50%;
+    left:50%;
+    margin-left:410px ;
+    margin-top:-170px;
+    border-radius: 50%;
+    opacity:0.5;
+    animation: move1 12s linear infinite;
+}
+
+@keyframes  move3{
+    0%{transform: scale(0);}
+    100%{transform: scale(1);}
+}
+/*整体banner动画*/
+@keyframes  banner{
+    0%{transform:translateX(0); }
+    7%{transform:translateX(0);}
+    12%{transform:translateX(-100%); }
+    18%{transform:translateX(-100%); }
+
+    18%{transform:translateX(-100%); }
+    19%{transform:translateX(-100%); }
+    25%{transform:translateX(-200%);}
+    31%{transform:translateX(-200%); }
+
+    31%{transform:translateX(-200%); }
+    32%{transform:translateX(-200%);}
+    38%{transform:translateX(-300%);}
+    47%{transform:translateX(-300%); }
+
+    47%{transform:translateX(-300%); }
+    48%{transform:translateX(-300%); }
+    56%{transform:translateX(-200%);}
+    63%{transform:translateX(-200%); }
+
+    63%{transform:translateX(-200%); }
+    64%{transform:translateX(-200%); }
+    70%{transform:translateX(-100%);}
+    79%{transform:translateX(-100%); }
+
+    79%{transform:translateX(-100%); }
+    80%{transform:translateX(-100%); }
+    86%{transform:translateX(0);}
+    92%{transform:translateX(0);}
+    100%{transform:translateX(0);}
+}
+
+/*DR广告-夏天*/
+.line{
+    width:100px;
+    height:2px;
+    border:2px solid #000000;
+}
+#summer{
+    background: url(../img/summerDay.jpg) no-repeat center;
+    width:100%;
+    height:857px;
+    position: relative;
+}
+#summer h1{
+    position: absolute;
+    left:50%;
+    top:50%;
+    margin-left:-520px;
+    margin-top:-215px;
+    font-size:40px ;
+}
+#summer .line{
+    position: absolute;
+    left:50%;
+    top:50%;
+    margin-left: -334px;
+    margin-top:-133px ;
+}
+#summer .summer_top{
+    position: absolute;
+    left:50%;
+    top:50%;
+    margin-left: -480px;
+    margin-top:-70px ;
+    font-weight: bold;
+}
+#summer .summer_content{
+    width:230px;
+    position: absolute;
+    left:50%;
+    top:50%;
+    margin-left:-20px;
+    margin-top: 180px;
+    text-align: center;
+    padding:10px;
+    line-height: 1.5;
+    font-weight: bold;
+}
+#summer img{
+    position: absolute;
+    animation: sun 9s linear infinite;
+}
+@keyframes sun {
+    0%{transform:rotate(0deg)}
+    100%{transform:rotate(360deg)}
+}
+/*DR栀子花*/
+#zhizihua{
+    background: url(../img/zhizihua_bg.jpg) no-repeat center;
+    width:100%;
+    height:1040px ;
+    position: relative;
+}
+#zhizihua h1:nth-child(1){
+    position: absolute;
+    top:0;
+    left:50%;
+    margin-top:40px;
+    margin-left: -200px;
+    font-size:50px ;
+}
+#zhizihua .line1{
+    width:100px;
+    height:2px;
+    border:2px solid #000000;
+    position: absolute;
+    top:50%;
+    left:50%;
+    margin-top:-380px;
+    margin-left: -10px;
+}
+#zhizihua h1{
+    position: absolute;
+    top:50%;
+    left:50%;
+    margin-top: -284px;
+    margin-left:-430px ;
+}
+/*栀子花遮罩*/
+.zhizhe{
+    width:450px;
+    height:450px;
+    position:absolute;
+    overflow:hidden;
+    border-radius: 50%;
+    top:50%;
+    left:50%;
+    margin-left:-210px;
+    margin-top:-63px;
+    z-index: 999;
+}
+.zhizhe img{
+    width:450px;
+    height:100%;
+    border-radius: 50%;
+}
+
+.zhizhe .zhizhe1{
+    width:450px;
+    height:30px;
+    border-radius: 50%;
+    text-align:center;
+    line-height: 30px;
+    position:absolute;
+    background:#49453f;
+    opacity:0.6;
+    color:#e8c0ff;
+    bottom:0;
+    transition-property:height;
+    transition-duration: 2s;
+}
+.zhizhe img:hover ~.zhizhe1{
+    height:450px;
+}
+.zhizhe .zhizhe1 h2{
+    margin-top:10px;
+}
+
+#zhizihua  .my{
+    position: absolute;
+    top:50%;
+    left:50%;
+    margin-left: -450px;
+    margin-top: -230px;
+}
+/*DR勿忘我*/
+#wuwangwo{
+    background: url(../img/wuwangwo_bg.jpg) no-repeat center;
+    width:100%;
+    height:1061px ;
+    position: relative;
+}
+#wuwangwo h1{
+    position: absolute;
+    top:0;
+    left:50%;
+    margin-top: 48px;
+    margin-left:335px ;
+}
+/*勿忘我遮罩*/
+.wuzhe{
+    width:450px;
+    height:450px;
+    position:absolute;
+    overflow:hidden;
+    border-radius: 50%;
+    top:50%;
+    left:50%;
+    margin-left:-435px;
+    margin-top:-176px;
+    z-index: 999;
+}
+.wuzhe img{
+    width:450px;
+    height:100%;
+    border-radius: 50%;
+}
+.wuzhe .wuzhe1{
+    width:450px;
+    height:30px;
+    border-radius: 50%;
+    text-align:center;
+    line-height: 30px;
+    position:absolute;
+    background:#49453f;
+    opacity:0.6;
+    color:#c3c0ff;
+    bottom:0;
+    transition-property:height;
+    transition-duration: 2s;
+}
+.wuzhe img:hover~.wuzhe1{
+    height:450px;
+}
+.wuzhe .wuzhe1 h2{
+    margin-top:10px;
+}
+#wuwangwo  .forever{
+    position: absolute;
+    top:50%;
+    left:50%;
+    margin-left: 330px;
+    margin-top: -440px;
+}
+/*DR杜鹃花*/
+#dujuanhua{
+    background: url(../img/dujuan_bg.jpg) no-repeat center;
+    width:100%;
+    height:1144px ;
+    position: relative;
+}
+#dujuanhua h1{
+    position: absolute;
+    top:0;
+    left:50%;
+    margin-top: 57px;
+    margin-left:330px ;
+}
+/*杜鹃花遮罩*/
+.duzhe{
+    width:450px;
+    height:450px;
+    position:absolute;
+    overflow:hidden;
+    border-radius: 50%;
+    top:50%;
+    left:50%;
+    margin-left:-434px;
+    margin-top:-247px;
+    z-index: 999;
+}
+.duzhe img{
+    width:450px;
+    height:100%;
+    border-radius: 50%;
+
+}
+.duzhe .duzhe1{
+    width:450px;
+    height:30px;
+    border-radius: 50%;
+    text-align:center;
+    line-height: 30px;
+    position:absolute;
+    background:#49453f;
+    opacity:0.6;
+    color:#f6ffc0;
+    bottom:0;
+    transition-property:height;
+    transition-duration: 2s;
+
+}
+.duzhe img:hover~.duzhe1{
+    height:450px;
+}
+.duzhe .duzhe1 h2{
+    margin-top:10px;
+}
+#dujuanhua  .true{
+    position: absolute;
+    top:50%;
+    left:50%;
+    margin-left: 315px;
+    margin-top: -470px;
+}
+
+/*DR马蹄莲*/
+#matilian{
+    background: url(../img/matilian_bg.jpg) no-repeat center;
+    width:100%;
+    height: 1082px;
+    position: relative;
+}
+#matilian h1{
+    position: absolute;
+    top:0;
+    left:50%;
+    margin-top: 28px;
+    margin-left:-430px ;
+}
+/*马蹄莲遮罩*/
+.mazhe{
+    width:450px;
+    height:450px;
+    position:absolute;
+    overflow:hidden;
+    border-radius: 50%;
+    top:50%;
+    left:50%;
+    margin-left:-53px;
+    margin-top:-240px;
+    z-index: 999;
+}
+.mazhe img{
+    width:450px;
+    height:100%;
+    border-radius: 50%;
+}
+.mazhe .mazhe1{
+    width:450px;
+    height:30px;
+    border-radius: 50%;
+    text-align:center;
+    line-height: 30px;
+    position:absolute;
+    background:#49453f;
+    opacity:0.6;
+    color:#ffdcc0;
+    bottom:0;
+    transition-property:height;
+    transition-duration: 2s;
+}
+.mazhe img:hover~.mazhe1{
+    height:450px;
+}
+.mazhe .mazhe1 h2{
+    margin-top:10px;
+}
+#matilian  .wedding{
+    position: absolute;
+    top:50%;
+    left:50%;
+    margin-left: -450px;
+    margin-top: -470px;
+}
+/*DR桃花*/
+#taohua{
+    background: url(../img/taohua_bg.jpg) no-repeat center;
+    width:100%;
+    height:1186px ;
+    position: relative;
+}
+#taohua h1{
+    position: absolute;
+    top:0;
+    left:50%;
+    margin-top: 36px;
+    margin-left:-430px ;
+}
+/*粉钻桃花遮罩*/
+.fenzuan{
+    width:450px;
+    height:450px;
+    position:absolute;
+    overflow:hidden;
+    border-radius: 50%;
+    top:50%;
+    left:50%;
+    margin-left:-226px;
+    margin-top:-314px;
+    z-index: 999;
+}
+.fenzuan img{
+    width:450px;
+    height:100%;
+    border-radius: 50%;
+}
+.fenzuan .fenzuan1{
+    width:450px;
+    height:30px;
+    border-radius: 50%;
+    text-align:center;
+    line-height: 30px;
+    position:absolute;
+    background:#49453f;
+    opacity:0.6;
+    color:pink;
+    bottom:0;
+    transition-property:height;
+    transition-duration: 2s;
+}
+.fenzuan img:hover~.fenzuan1{
+    height:450px;
+}
+.fenzuan .fenzuan1 h2{
+    margin:10px;
+}
+#taohua  .with{
+    position: absolute;
+    top:50%;
+    left:50%;
+    margin-left: -470px;
+    margin-top: -510px;
+}
+/*DR桃花树*/
+#taohua .taohuashu{
+    width:550px;
+    height:550px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    margin-left: 230px;
+    margin-top: -387px;
+}
+#taohua .taohuashu img{
+    width:500px;
+    height:520px;
+}
+
+.taohua_bottom{
+    width:500px;
+    position: absolute;
+    text-align: center;
+    top:50%;
+    left:50%;
+    margin-left:-270px ;
+    margin-top:470px ;
+    font-size: 26px;
+}
+.taohua_bottom div{
+    width:100px;
+    height:30px;
+    background: #000;
+    margin:0 auto;
+    margin-top:30px;
+}
+.taohua_bottom div a{
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 30px;
+    display: block;
+}
+/*DR商店*/
+.store{
+    background: url(../img/store.jpg) no-repeat center;
+    width:100%;
+    height:410px ;
+    position: relative;
+}
+.store img{
+    position: absolute;
+    top:50%;
+    left:50%;
+    margin-left:110px ;
+    margin-top:-170px ;
+}
+.store .line{
+    position: absolute;
+    top:50%;
+    left:50%;
+    margin-left:185px ;
+    margin-top: -100px ;
+}
+.store h2{
+    position: absolute;
+    top:50%;
+    left:50%;
+    margin-left:160px ;
+    margin-top: -70px;
+}
+.store .store_yuyue {
+    width:100px;
+    height:20px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    margin-left:200px ;
+    margin-top:-20px ;
+}
+.store div a{
+    color: #000000;
+    font-weight: bold;
+    display: block;
+}
+/*DR页脚部分*/
+footer{
+    width:100%;
+}
+/*页脚上部分*/
+footer .footer_top{
+    height:28px;
+    background: url(../img/footer_rp.jpg) center;
+    box-shadow: 0 20px 10px #000;
+}
+/*页脚小图标*/
+footer .footer_box{
+    width:100%;
+    height:120px;
+}
+footer .footer_icon{
+    width:900px;
+    height:120px;
+    margin:40px auto;
+    display: flex;
+}
+footer .footer_icon div{
+    width:60px;
+    height:60px;
+    float: left;
+    flex: 1;
+}
+footer .footer_icon a{
+    display: block;
+    color: #323232;
+    font-weight: bold;
+}
+footer .footer_icon .footer_box1{
+    height:90px;
+    position: relative;
+}
+footer .footer_icon .footer_box1 p{
+    position: absolute;
+    top:50%;
+    left:50%;
+    margin-left:-62px ;
+    margin-top:20px ;
+}
+footer .footer_icon1 div{
+    background: url(../img/icon_footer.png) no-repeat center;
+    background-position: top left;
+
+}
+footer .footer_icon .footer_box2{
+    height:90px;
+    position: relative;
+}
+footer .footer_icon .footer_box2 p{
+    position: absolute;
+    top:50%;
+    left:50%;
+    margin-left:-62px ;
+    margin-top:20px ;
+}
+footer .footer_icon2 div{
+    background: url(../img/icon_footer.png) no-repeat center;
+    background-position: -60px 0;
+}
+footer .footer_icon .footer_box3{
+    height:90px;
+    position: relative;
+}
+footer .footer_icon .footer_box3 p{
+    position: absolute;
+    top:50%;
+    left:50%;
+    margin-left:-62px ;
+    margin-top:20px ;
+}
+footer .footer_icon3 div{
+    background: url(../img/icon_footer.png) no-repeat center;
+    background-position:-120px 0 ;
+}
+footer .footer_icon .footer_box4{
+    height:90px;
+    position: relative;
+}
+footer .footer_icon .footer_box4 p{
+    position: absolute;
+    top:50%;
+    left:50%;
+    margin-left:-62px ;
+    margin-top:20px ;
+}
+footer .footer_icon4 div {
+    background: url(../img/icon_footer.png) no-repeat center;
+    background-position:-180px 0;
+}
+footer .footer_icon .footer_box5{
+    height:90px;
+    position: relative;
+}
+footer .footer_icon .footer_box5 p{
+    position: absolute;
+    top:50%;
+    left:50%;
+    margin-left:-62px ;
+    margin-top:20px ;
+}
+footer .footer_icon5 div{
+    background: url(../img/icon_footer.png) no-repeat center;
+    background-position:-240px 0;
+}
+footer .footer_icon .footer_box6{
+    height:90px;
+    position: relative;
+}
+footer .footer_icon .footer_box6 p{
+    position: absolute;
+    top:50%;
+    left:50%;
+    margin-left:-75px ;
+    margin-top:20px ;
+}
+footer .footer_icon6 div{
+    background: url(../img/icon_footer.png) no-repeat center;
+    background-position:-300px 0;
+}
+footer .footer_icon .footer_box7{
+    height:90px;
+    position: relative;
+}
+footer .footer_icon .footer_box7 p{
+    position: absolute;
+    top:50%;
+    left:50%;
+    margin-left:-62px ;
+    margin-top:20px ;
+}
+footer .footer_icon7 div{
+    background: url(../img/icon_footer.png) no-repeat center;
+    background-position: top right;
+}
+/*页脚服务列*/
+footer .footer_icon_bottom{
+    width:100%;
+    height:80px;
+    background:#e9e9e9;
+    display: flex;
+}
+footer .footer_icon_bottom ul{
+    width:900px;
+    display: flex;
+    flex: 1;
+}
+footer .footer_icon_bottom ul li{
+    float: left;
+    text-align: center;
+    line-height: 80px;
+    flex: 1;
+}
+footer .footer_icon_bottom ul li a{
+    display: block;
+    font-family: "微软雅黑", sans-serif;
+    color: #000000;
+}
+footer .footer_icon_bottom ul li a img{
+    display: inline-block;
+    vertical-align: middle;
+}
+footer .footer_icon_bottom .service{
+    width:200px;
+    text-align: center;
+    margin:10px auto;
+}
+/*页脚下部分*/
+/*页脚关于我们*/
+footer .footer_bottom_top{
+    width:100%;
+    height:170px;
+    background:#797979;
+}
+footer .footer_bottom_top ul{
+    display: flex;
+    padding:50px;
+
+}
+footer .footer_bottom_top ul li{
+    flex: 1;
+    float: left;
+    text-align: center;
+}
+footer .footer_bottom_top ul li h4{
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #c9c7c7;
+}
+footer .footer_bottom_top ul li a{
+    display: block;
+    color: #c9c7c7;
+}
+/*页脚声明*/
+footer .footer_bottom_content{
+    width:100%;
+    height:70px;
+    text-align: center;
+    padding: 17px 0;
+    background:#797979;
+    color: #c9c7c7 ;
+}
+/*页脚友情链接*/
+footer .footer_share{
+    width:100%;
+    height:70px;
+    text-align: center;
+    padding: 17px 0;
+    background:#797979;
+    color: #c9c7c7;
+}
+footer .footer_share a{
+    color: #c9c7c7;
+}
+footer .footer_share a:hover{
+    color: black;
+}
+/*页脚中英文切换*/
+footer .footer_bottom_bottom{
+    width:100%;
+    height:70px;
+    text-align: center;
+    padding: 30px 0;
+    background:#797979;
+    color:#666666 ;
+}
+footer .footer_bottom_bottom a{
+    color: #c9c7c7;
+}
